@@ -1,0 +1,40 @@
+2017-08-29T12:05:37.449945000 0.124585s notice: Recursively removing directory /Users/georgexia/Desktop/awesome-bucketlist/rethinkdb_data/tmp
+2017-08-29T12:05:37.451871000 0.126515s notice: Initializing directory /Users/georgexia/Desktop/awesome-bucketlist/rethinkdb_data
+2017-08-29T12:05:37.451981000 0.126620s info: Creating a default database for your convenience. (This is because you ran 'rethinkdb' without 'create', 'serve', or '--join', and the directory '/Users/georgexia/Desktop/awesome-bucketlist/rethinkdb_data' did not already exist or is empty.)
+2017-08-29T12:05:37.452042000 0.126681s notice: Running rethinkdb 2.3.6 (CLANG 8.1.0 (clang-802.0.42))...
+2017-08-29T12:05:37.457534000 0.132175s notice: Running on Darwin 16.7.0 x86_64
+2017-08-29T12:05:37.457616000 0.132255s notice: Loading data from directory /Users/georgexia/Desktop/awesome-bucketlist/rethinkdb_data
+2017-08-29T12:05:37.554241000 0.228881s info: Automatically using cache size of 3962 MB
+2017-08-29T12:05:37.554755000 0.229394s notice: Listening for intracluster connections on port 29015
+2017-08-29T12:05:37.556608000 0.231248s notice: Listening for client driver connections on port 28015
+2017-08-29T12:05:37.556738000 0.231377s notice: Listening for administrative HTTP connections on port 8080
+2017-08-29T12:05:37.556741000 0.231380s notice: Listening on cluster addresses: 127.0.0.1, ::1
+2017-08-29T12:05:37.556745000 0.231383s notice: Listening on driver addresses: 127.0.0.1, ::1
+2017-08-29T12:05:37.556746000 0.231385s notice: Listening on http addresses: 127.0.0.1, ::1
+2017-08-29T12:05:37.556750000 0.231388s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2017-08-29T12:05:37.556754000 0.231392s notice: Server ready, "Georges_MBP_hsd1_de_comcast_net_g6u" 7b09ff49-2258-400a-b0f1-1f2bb95e4070
+2017-08-29T12:05:44.332056000 7.006645s info: Table 5a50d873-9a52-455f-b0a2-0db7aed7344a: Starting a new Raft election for term 1.
+2017-08-29T12:05:44.332736000 7.007324s info: Table 5a50d873-9a52-455f-b0a2-0db7aed7344a: Added replica on this server.
+2017-08-29T12:05:44.351197000 7.025786s info: Table 5a50d873-9a52-455f-b0a2-0db7aed7344a: This server is Raft leader for term 1. Latest log index is 0.
+2017-08-29T13:57:10.569553000 6693.178322s notice: Server got SIGINT from pid 481, uid 501; shutting down...
+2017-08-29T13:57:10.569672000 6693.178440s notice: Shutting down client connections...
+2017-08-29T13:57:10.569754000 6693.178522s notice: All client connections closed.
+2017-08-29T13:57:10.569760000 6693.178528s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2017-08-29T13:57:10.575595000 6693.184364s notice: Storage engine shut down.
+2017-08-29T13:57:12.106000000 0.080180s notice: Running rethinkdb 2.3.6 (CLANG 8.1.0 (clang-802.0.42))...
+2017-08-29T13:57:12.111785000 0.085962s notice: Running on Darwin 16.7.0 x86_64
+2017-08-29T13:57:12.111845000 0.086020s notice: Loading data from directory /Users/georgexia/Desktop/awesome-bucketlist/rethinkdb_data
+2017-08-29T13:57:12.152258000 0.126433s info: Automatically using cache size of 3469 MB
+2017-08-29T13:57:12.152676000 0.126852s notice: Listening for intracluster connections on port 29015
+2017-08-29T13:57:12.162819000 0.136995s notice: Listening for client driver connections on port 28015
+2017-08-29T13:57:12.163007000 0.137182s notice: Listening for administrative HTTP connections on port 8080
+2017-08-29T13:57:12.163010000 0.137185s notice: Listening on cluster addresses: 127.0.0.1, ::1
+2017-08-29T13:57:12.163011000 0.137186s notice: Listening on driver addresses: 127.0.0.1, ::1
+2017-08-29T13:57:12.163014000 0.137189s notice: Listening on http addresses: 127.0.0.1, ::1
+2017-08-29T13:57:12.163069000 0.137245s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2017-08-29T13:57:12.163072000 0.137247s notice: Server ready, "Georges_MBP_hsd1_de_comcast_net_g6u" 7b09ff49-2258-400a-b0f1-1f2bb95e4070
+2017-08-29T13:57:13.197343000 1.171519s info: Table 5a50d873-9a52-455f-b0a2-0db7aed7344a: Starting a new Raft election for term 2.
+2017-08-29T13:57:13.218310000 1.192486s info: Table 5a50d873-9a52-455f-b0a2-0db7aed7344a: This server is Raft leader for term 2. Latest log index is 3.
+2017-08-29T15:39:22.626353000 6130.525752s notice: Someone asked for the nonwhitelisted file "/polls".  If this should be accessible, add it to the static web assets.
+2017-08-29T15:40:19.331203000 6187.229932s notice: Someone asked for the nonwhitelisted file "/polls".  If this should be accessible, add it to the static web assets.
+2017-08-29T15:40:23.360716000 6191.259400s notice: Someone asked for the nonwhitelisted file "/poll".  If this should be accessible, add it to the static web assets.

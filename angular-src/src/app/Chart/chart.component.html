@@ -1,0 +1,15 @@
+<p-chart type="line" [data]="data"></p-chart>
+
+
+<p-messages [(value)]="msgs"></p-messages>
+
+<p-growl [(value)]="msgs"></p-growl>
+
+<div>
+    <button type="button" pButton (click)="showSuccess()" label="Success" class="ui-button-success">Success</button>
+    <button type="button" pButton (click)="showInfo()" label="Info" class="ui-button-info">Info</button>
+    <button type="button" pButton (click)="showWarn()" label="Warn" class="ui-button-warning">warn</button>
+    <button type="button" pButton (click)="showError()" label="Error" class="ui-button-danger">error</button>
+    <button type="button" pButton (click)="showMultiple()" label="Multiple">multiple</button>
+    <button type="button" pButton (click)="clear()" icon="fa-close" style="float:right" label="Clear">clear</button>
+</div>

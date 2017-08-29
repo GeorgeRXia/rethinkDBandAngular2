@@ -1,0 +1,83 @@
+<div class="container">
+
+    <form (ngSubmit)="onSubmit()">
+      <md-card-title>
+      <div>
+        <label for="title">Title</label>
+        <input type="text" [(ngModel)]="newList.title" name="title" required>
+      </div>
+      </md-card-title>
+
+      <div>
+      <md-card>
+        <label for="category">Select Category</label>
+        <select [(ngModel)]="newList.category" name = "category" >
+
+            <option value="High">High Priority</option>
+            <option value="Medium">Medium Priority</option>
+            <option value="Low">Low Prioirty</option>
+
+        </select>
+      </md-card>
+      </div>
+    <br>
+      <md-card>
+      <div>
+      <md-select placeholder="Favorite food">
+        <md-option *ngFor="let food of foods" [value]="food.value">
+          {{ food.viewValue }}
+        </md-option>
+      </md-select>
+    </div>
+    </md-card>
+      <div>
+        <label for="description">description</label>
+        <input type="text" [(ngModel)]="newList.description" name="description" required>
+      </div>
+      <!-- This is material -->
+      <md-card>
+      <md-input-container>
+        <input mdInput [mdDatepicker]="picker" placeholder="Choose a date" [(ngModel)]="newList.date" name="date">
+        <button mdSuffix [mdDatepickerToggle]="picker"></button>
+      </md-input-container>
+      </md-card>
+      <md-datepicker #picker></md-datepicker>
+      <div>
+        <md-radio-group [(ngModel)]="newList.options" name="options">
+          <md-radio-button value="Eating">Eating</md-radio-button>
+          <md-radio-button value="sleeping">sleeping</md-radio-button>
+        </md-radio-group>
+      </div>
+      <div>
+        <md-checkbox [(ngModel)]="newList.check" name="check">Check me!</md-checkbox>
+      </div>
+      <md-slide-toggle [(ngModel)]="newList.slide" name="slide">Slide me!</md-slide-toggle>
+      <button type="submit">Submit</button>
+
+    </form>
+</div>
+<!-- this is prime -->
+<div class="ui-g-12 ui-md-4">
+    <div class="ui-inputgroup">
+        <input type="text" pInputText placeholder="Price">
+        <span class="ui-inputgroup-addon"><p-radioButton></p-radioButton></span>
+    </div>
+</div>
+<!-- this is material -->
+<div>
+  <md-progress-spinner mode="determinate" [value]= "progress">
+
+    </md-progress-spinner>
+    <div> {{hi}} </div>
+    <md-spinner>
+    </md-spinner>
+</div>
+<md-input-container>
+  <input mdInput value="Disco party!" placeholder="Message" #message>
+</md-input-container>
+
+<md-input-container>
+  <input mdInput value="Dance" placeholder="Action" #action>
+</md-input-container>
+
+<button md-button (click)="openSnackBar(message.value, action.value)">Show snack-bar</button>
