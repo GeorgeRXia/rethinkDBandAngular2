@@ -38,3 +38,68 @@
 2017-08-29T15:39:22.626353000 6130.525752s notice: Someone asked for the nonwhitelisted file "/polls".  If this should be accessible, add it to the static web assets.
 2017-08-29T15:40:19.331203000 6187.229932s notice: Someone asked for the nonwhitelisted file "/polls".  If this should be accessible, add it to the static web assets.
 2017-08-29T15:40:23.360716000 6191.259400s notice: Someone asked for the nonwhitelisted file "/poll".  If this should be accessible, add it to the static web assets.
+2017-09-02T13:18:59.966294000 40.021924s notice: Running rethinkdb 2.3.6 (CLANG 8.1.0 (clang-802.0.42))...
+2017-09-02T13:18:59.975204000 40.030831s notice: Running on Darwin 16.7.0 x86_64
+2017-09-02T13:18:59.975277000 40.030901s notice: Loading data from directory /Users/georgexia/Desktop/rethinkDB&Angular2/rethinkdb_data
+2017-09-02T13:19:00.012262000 40.067868s info: Automatically using cache size of 2243 MB
+2017-09-02T13:19:00.012740000 40.068347s notice: Listening for intracluster connections on port 29015
+2017-09-02T13:19:00.025826000 40.081433s notice: Listening for client driver connections on port 28015
+2017-09-02T13:19:00.025936000 40.081543s notice: Listening for administrative HTTP connections on port 8080
+2017-09-02T13:19:00.025939000 40.081545s notice: Listening on cluster addresses: 127.0.0.1, ::1
+2017-09-02T13:19:00.025940000 40.081546s notice: Listening on driver addresses: 127.0.0.1, ::1
+2017-09-02T13:19:00.025941000 40.081547s notice: Listening on http addresses: 127.0.0.1, ::1
+2017-09-02T13:19:00.025991000 40.081597s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2017-09-02T13:19:00.025993000 40.081599s notice: Server ready, "Georges_MBP_hsd1_de_comcast_net_g6u" 7b09ff49-2258-400a-b0f1-1f2bb95e4070
+2017-09-02T13:19:01.958340000 42.013929s info: Table 5a50d873-9a52-455f-b0a2-0db7aed7344a: Starting a new Raft election for term 3.
+2017-09-02T13:19:01.981787000 42.037376s info: Table 5a50d873-9a52-455f-b0a2-0db7aed7344a: This server is Raft leader for term 3. Latest log index is 6.
+2017-09-02T13:35:53.721091000 1053.766460s info: Table 7b9882b6-02d8-4599-909c-ee9f95a59875: Starting a new Raft election for term 1.
+2017-09-02T13:35:53.721199000 1053.766567s info: Table 7b9882b6-02d8-4599-909c-ee9f95a59875: Added replica on this server.
+2017-09-02T13:35:53.738630000 1053.783999s info: Table 7b9882b6-02d8-4599-909c-ee9f95a59875: This server is Raft leader for term 1. Latest log index is 0.
+2017-09-02T13:36:09.249037000 1069.294261s info: Table 3afb138c-b101-4e09-869c-3567513badbb: Starting a new Raft election for term 1.
+2017-09-02T13:36:09.249307000 1069.294530s info: Table 3afb138c-b101-4e09-869c-3567513badbb: Added replica on this server.
+2017-09-02T13:36:09.267033000 1069.312256s info: Table 3afb138c-b101-4e09-869c-3567513badbb: This server is Raft leader for term 1. Latest log index is 0.
+2017-09-02T13:42:07.919220000 1427.960825s info: Table c68b2102-bfbf-439f-a491-9c1b71470f03: Starting a new Raft election for term 1.
+2017-09-02T13:42:07.919307000 1427.960913s info: Table c68b2102-bfbf-439f-a491-9c1b71470f03: Added replica on this server.
+2017-09-02T13:42:07.936089000 1427.977694s info: Table c68b2102-bfbf-439f-a491-9c1b71470f03: This server is Raft leader for term 1. Latest log index is 0.
+2017-09-02T13:43:08.683243000 1488.724234s notice: Removing file /Users/georgexia/Desktop/rethinkDB&Angular2/rethinkdb_data/3afb138c-b101-4e09-869c-3567513badbb
+2017-09-02T13:43:08.683254000 1488.724244s info: Table 3afb138c-b101-4e09-869c-3567513badbb: Deleted the table.
+2017-09-02T13:43:08.704760000 1488.745751s notice: Removing file /Users/georgexia/Desktop/rethinkDB&Angular2/rethinkdb_data/7b9882b6-02d8-4599-909c-ee9f95a59875
+2017-09-02T13:43:08.704769000 1488.745760s info: Table 7b9882b6-02d8-4599-909c-ee9f95a59875: Deleted the table.
+2017-09-02T13:43:08.728080000 1488.769071s notice: Removing file /Users/georgexia/Desktop/rethinkDB&Angular2/rethinkdb_data/c68b2102-bfbf-439f-a491-9c1b71470f03
+2017-09-02T13:43:08.728088000 1488.769078s info: Table c68b2102-bfbf-439f-a491-9c1b71470f03: Deleted the table.
+2017-09-02T13:44:48.086705000 1588.126684s notice: Server got SIGINT from pid 15261, uid 501; shutting down...
+2017-09-02T13:44:48.086890000 1588.126869s notice: Shutting down client connections...
+2017-09-02T13:44:48.087099000 1588.127078s notice: All client connections closed.
+2017-09-02T13:44:48.087105000 1588.127084s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2017-09-02T13:44:48.089884000 1588.129863s notice: Storage engine shut down.
+2017-09-02T13:45:35.367720000 40.032465s notice: Running rethinkdb 2.3.6 (CLANG 8.1.0 (clang-802.0.42))...
+2017-09-02T13:45:35.381190000 40.045930s notice: Running on Darwin 16.7.0 x86_64
+2017-09-02T13:45:35.381249000 40.045988s notice: Loading data from directory /Users/georgexia/Desktop/rethinkDB&Angular2/rethinkdb_data
+2017-09-02T13:45:35.412613000 40.077352s info: Automatically using cache size of 2049 MB
+2017-09-02T13:45:45.422353000 50.086984s notice: Listening for intracluster connections on port 29015
+2017-09-02T13:45:45.434933000 50.099564s notice: Listening for client driver connections on port 28015
+2017-09-02T13:45:45.435152000 50.099782s notice: Listening for administrative HTTP connections on port 8080
+2017-09-02T13:45:47.375114000 52.039728s info: Table 5a50d873-9a52-455f-b0a2-0db7aed7344a: Starting a new Raft election for term 4.
+2017-09-02T13:45:47.394202000 52.058815s info: Table 5a50d873-9a52-455f-b0a2-0db7aed7344a: This server is Raft leader for term 4. Latest log index is 9.
+2017-09-02T13:45:55.435992000 60.100532s notice: Listening on cluster addresses: 127.0.0.1, 192.168.0.105, ::1, fe80::1%1, fe80::1637:e879:61d7:c662%10, fe80::1c6a:29e7:e3cd:81e5%4, fe80::9472:fcff:fe57:4111%9
+2017-09-02T13:46:05.440010000 70.104443s notice: Listening on driver addresses: 127.0.0.1, 192.168.0.105, ::1, fe80::1%1, fe80::1637:e879:61d7:c662%10, fe80::1c6a:29e7:e3cd:81e5%4, fe80::9472:fcff:fe57:4111%9
+2017-09-02T13:46:15.451040000 80.115382s notice: Listening on http addresses: 127.0.0.1, 192.168.0.105, ::1, fe80::1%1, fe80::1637:e879:61d7:c662%10, fe80::1c6a:29e7:e3cd:81e5%4, fe80::9472:fcff:fe57:4111%9
+2017-09-02T13:46:15.451061000 80.115402s notice: Server ready, "Georges_MBP_hsd1_de_comcast_net_g6u" 7b09ff49-2258-400a-b0f1-1f2bb95e4070
+2017-09-02T19:38:26.091685000 16966.353690s info: Table 5ca5b432-2ac1-4505-bc43-2233e12668bc: Starting a new Raft election for term 1.
+2017-09-02T19:38:26.091841000 16966.353846s info: Table 5ca5b432-2ac1-4505-bc43-2233e12668bc: Added replica on this server.
+2017-09-02T19:38:26.109452000 16966.371457s info: Table 5ca5b432-2ac1-4505-bc43-2233e12668bc: This server is Raft leader for term 1. Latest log index is 0.
+2017-09-03T18:11:10.763408000 51101.503876s notice: Removing file /Users/georgexia/Desktop/rethinkDB&Angular2/rethinkdb_data/5ca5b432-2ac1-4505-bc43-2233e12668bc
+2017-09-03T18:11:10.763415000 51101.503883s info: Table 5ca5b432-2ac1-4505-bc43-2233e12668bc: Deleted the table.
+2017-09-03T18:11:23.788162000 51114.528485s info: Table 2d1dd797-1182-49ae-9a6b-7c495ba6102e: Starting a new Raft election for term 1.
+2017-09-03T18:11:23.788365000 51114.528688s info: Table 2d1dd797-1182-49ae-9a6b-7c495ba6102e: Added replica on this server.
+2017-09-03T18:11:23.805805000 51114.546128s info: Table 2d1dd797-1182-49ae-9a6b-7c495ba6102e: This server is Raft leader for term 1. Latest log index is 0.
+2017-09-03T18:43:31.585553000 53042.304542s notice: Removing file /Users/georgexia/Desktop/rethinkDB&Angular2/rethinkdb_data/2d1dd797-1182-49ae-9a6b-7c495ba6102e
+2017-09-03T18:43:31.585560000 53042.304548s info: Table 2d1dd797-1182-49ae-9a6b-7c495ba6102e: Deleted the table.
+2017-09-03T18:43:41.135327000 53051.854207s info: Table 513b1c2e-adb1-41ed-8c88-256019a8f1a5: Starting a new Raft election for term 1.
+2017-09-03T18:43:41.135417000 53051.854296s info: Table 513b1c2e-adb1-41ed-8c88-256019a8f1a5: Added replica on this server.
+2017-09-03T18:43:41.153030000 53051.871911s info: Table 513b1c2e-adb1-41ed-8c88-256019a8f1a5: This server is Raft leader for term 1. Latest log index is 0.
+2017-09-04T16:51:42.816639000 95506.940983s notice: Removing file /Users/georgexia/Desktop/rethinkDB&Angular2/rethinkdb_data/513b1c2e-adb1-41ed-8c88-256019a8f1a5
+2017-09-04T16:51:42.816652000 95506.940993s info: Table 513b1c2e-adb1-41ed-8c88-256019a8f1a5: Deleted the table.
+2017-09-04T17:24:25.069188000 97469.168132s info: Table 830eba87-fe00-4687-9cfd-1113af978443: Starting a new Raft election for term 1.
+2017-09-04T17:24:25.069290000 97469.168233s info: Table 830eba87-fe00-4687-9cfd-1113af978443: Added replica on this server.
+2017-09-04T17:24:25.086462000 97469.185406s info: Table 830eba87-fe00-4687-9cfd-1113af978443: This server is Raft leader for term 1. Latest log index is 0.

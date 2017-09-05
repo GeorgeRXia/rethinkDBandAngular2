@@ -1,1 +1,32 @@
-<app-view-list></app-view-list>
+<div *ngIf="frontPageProgressBar">
+  <md-progress-bar mode="indeterminate"></md-progress-bar>
+</div>
+<div *ngIf="frontPageLoad">
+  <div class="body">
+    <div class="mountain-image-text-container">
+      <span class="mountain-image-text">Start YOUR way to a less stressful more productive lifestyle</span>
+    </div>
+    <md-card class= "introduction-paragraph">
+      <div> Welcome to Goal Reacher! </div>
+      <div> We are here to join you in your journey to accomplish whatever goal </div>
+      <div> By logging your data, we can help you analyze and pin point which habits make you more productive. <br>
+    So we can put together a to-do-list that isn't overwhelming, but also maximizes your day.</div>
+  </md-card>
+  <div class="space"></div>
+  <md-card class= "introduction-paragraph">
+    Organizes your day to find what routines create long term patterns for success
+    <hr>
+    <md-tab-group>
+      <md-tab label="Charts">Content 1</md-tab>
+      <md-tab label="Blogs">Content 2</md-tab>
+      <md-tab label="Daily Reports">Content 2</md-tab>
+    </md-tab-group>
+  </md-card>
+  <div class="space"></div>
+  <div class= "start-button-container">
+  <button md-raised-button class= "start-button">
+    <a uiSref="addlist" uiSrefActive="active">Get Started</a>
+  </button>
+  </div>
+  </div>
+</div>

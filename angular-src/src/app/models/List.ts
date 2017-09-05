@@ -1,11 +1,12 @@
 export interface List {
     _id?: string;
-    title: string;
+    blog: string;
     description: string;
     category: string;
     date: string;
-    options: string;
-    check: string;
-    slide: string;
+    sleep: string;
+    fatigue: string;
+    exercise: string;
+    meal: string;
 
 }

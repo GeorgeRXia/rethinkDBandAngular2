@@ -1,0 +1,16 @@
+<span>
+  <div>
+    Relax...
+  </div>
+  <div *ngIf = "wait">
+    <md-progress-spinner mode="determinate" class="spinner" [value]="progress" > </md-progress-spinner>
+  </div>
+  <div *ngIf = "active">
+    <div class="snack-bar-message" >
+      Checkout your updated Profile
+    </div>
+    <div>
+      <a uiSref="viewlist" uiSrefActive="active">Click here</a>
+    </div>
+  </div>
+</span>

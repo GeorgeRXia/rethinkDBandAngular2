@@ -17,7 +17,7 @@ class db {
         });
       },
       function(connection,callback) {
-        rethinkdb.dbCreate('polls').run(connection,function(err, result) {
+        rethinkdb.dbCreate('goals').run(connection,function(err, result) {
           if(err) {
             console.log("Database already created");
           } else {
@@ -27,7 +27,7 @@ class db {
         });
       },
       function(connection,callback) {
-        rethinkdb.db('polls').tableCreate('poll').run(connection,function(err,result) {
+        rethinkdb.db('goals').tableCreate('goal').run(connection,function(err,result) {
           connection.close();
           if(err) {
             console.log("table already created");
@@ -55,7 +55,7 @@ class db {
     rethinkdb.connect({
       host : 'localhost',
       port : 28015,
-      db : 'polls'
+      db : 'goals'
     }, function(err,connection) {
       callback(err,connection);
     });

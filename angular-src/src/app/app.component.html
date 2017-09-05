@@ -1,35 +1,41 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<md-sidenav-container class="example-container">
-  <md-sidenav #sidenav class="example-sidenav">
-    <button md-button [mdMenuTriggerFor]="menu">Links</button>
-<md-menu #menu="mdMenu">
-  <div>
-    <a routerLink="/viewlist" routerLinkActive="active">ViewList</a>
-  </div>
-  <div>
-    <a routerLink="/addlist" routerLinkActive="active">AddList</a>
-  </div>
-  <div>
-    <a routerLink="/chart" routerLinkActive="active">Chart</a>
-  </div>
-</md-menu>
+<md-sidenav-container>
+  <md-sidenav #sidenav>
+    <div>
+      <button md-button [mdMenuTriggerFor]="materialMenu">Material</button>
+      <md-menu #materialMenu="mdMenu">
+        <div class="nav">
+          <div><a uiSref="addlist" uiSrefActive="active">addlist</a></div>
+        </div>
+      </md-menu>
+    </div>
+    <div>
+      <button md-button [mdMenuTriggerFor]="primengMenu">Primeng</button>
+      <md-menu #primengMenu="mdMenu">
+      <div class="nav">
+          <div><a uiSref="viewlist" uiSrefActive="active">viewlist</a></div>
+          <div><a uiSref="chart" uiSrefActive="active">chart</a></div>
+      </div>
+      </md-menu>
+    </div>
+    <md-chip-list>
+      <md-chip><a uiSref="addlist" uiSrefActive="active">addlist</a></md-chip>
+      <md-chip><a uiSref="viewlist" uiSrefActive="active">viewlist</a></md-chip>
+      <md-chip><a uiSref="chart" uiSrefActive="active">chart</a></md-chip>
+    </md-chip-list>
   </md-sidenav>
-<md-toolbar>
-  <div class="example-sidenav-content">
-    <button type="button" md-button (click)="sidenav.open()">
-      Open sidenav
-    </button>
-  </div>
-</md-toolbar>
-  <router-outlet></router-outlet>
-
+  <md-toolbar>
+    <div>
+      <button type="button" md-button (click)="sidenav.open()">
+        <i class="material-icons">menu</i>
+      </button>
+    </div>
+    <span class="tagline">Habit Maker</span>
+    <span class="space-filler"></span>
+    <span>
+      <a uiSref="home" uiSrefActive="active">
+        <i class="material-icons">home</i>
+      </a>
+    </span>
+  </md-toolbar>
+<ui-view></ui-view>
 </md-sidenav-container>
-<div style="text-align:center">
-
-
-
-
-
-
-
-</div>

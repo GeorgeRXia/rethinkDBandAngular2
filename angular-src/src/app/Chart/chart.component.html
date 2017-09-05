@@ -1,3 +1,4 @@
+
 <p-chart type="line" [data]="data"></p-chart>
 
 
@@ -13,3 +14,5 @@
     <button type="button" pButton (click)="showMultiple()" label="Multiple">multiple</button>
     <button type="button" pButton (click)="clear()" icon="fa-close" style="float:right" label="Clear">clear</button>
 </div>
+
+<p-spinner size="30" [(ngModel)]="val" [min]="0" [max]="100"></p-spinner>
