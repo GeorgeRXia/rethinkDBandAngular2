@@ -6,9 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styles: []
 })
 export class ChartComponent {
-data: any;
+  data: any;
+  uploadedFiles: any[] = [];
+  msgs = [];
 
-msgs = [];
   constructor() {
       this.data = {
           labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
@@ -24,6 +25,16 @@ msgs = [];
           ]
       }
   }
+  
+  onUpload(event) {
+    for(let file of event.files) {
+        this.uploadedFiles.push(file);
+    }
+
+    this.msgs = [];
+    this.msgs.push({severity: 'info', summary: 'File Uploaded', detail: ''});
+}
+
   showSuccess() {
       this.msgs = [];
       this.msgs.push({severity:'success', summary:'Success Message', detail:'Order submitted'});

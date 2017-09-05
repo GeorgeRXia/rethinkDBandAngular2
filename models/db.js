@@ -36,7 +36,18 @@ class db {
           }
           callback(null,"Database is setup successfully");
         });
-      }
+      },
+      // function(connection,callback) {
+      //   rethinkdb.db('goals').tableCreate('image').run(connection,function(err,result) {
+      //     connection.close();
+      //     if(err) {
+      //       console.log("table already created");
+      //     } else {
+      //       console.log("Created new table");
+      //     }
+      //     callback(null,"Database is setup successfully");
+      //   });
+      // }
     ],function(err,data) {
       console.log(data);
     });
@@ -60,6 +71,15 @@ class db {
       callback(err,connection);
     });
   };
+  // connectToImageDb(callback) {
+  //   rethinkdb.connect({
+  //     host : 'localhost',
+  //     port : 28015,
+  //     db : 'images'
+  //   }, function(err,connection) {
+  //     callback(err,connection);
+  //   });
+  // };
 }
 
 module.exports = db;

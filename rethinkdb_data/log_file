@@ -103,3 +103,11 @@
 2017-09-04T17:24:25.069188000 97469.168132s info: Table 830eba87-fe00-4687-9cfd-1113af978443: Starting a new Raft election for term 1.
 2017-09-04T17:24:25.069290000 97469.168233s info: Table 830eba87-fe00-4687-9cfd-1113af978443: Added replica on this server.
 2017-09-04T17:24:25.086462000 97469.185406s info: Table 830eba87-fe00-4687-9cfd-1113af978443: This server is Raft leader for term 1. Latest log index is 0.
+2017-09-05T16:13:25.070680000 133984.990884s info: Table 4413ce0d-db2c-43ec-ad87-eec416be5e78: Starting a new Raft election for term 1.
+2017-09-05T16:13:25.070766000 133984.990970s info: Table 4413ce0d-db2c-43ec-ad87-eec416be5e78: Added replica on this server.
+2017-09-05T16:13:25.087846000 133985.008050s info: Table 4413ce0d-db2c-43ec-ad87-eec416be5e78: This server is Raft leader for term 1. Latest log index is 0.
+2017-09-05T16:21:31.767264000 134471.680462s notice: Removing file /Users/georgexia/Desktop/rethinkDB&Angular2/rethinkdb_data/830eba87-fe00-4687-9cfd-1113af978443
+2017-09-05T16:21:31.767272000 134471.680470s info: Table 830eba87-fe00-4687-9cfd-1113af978443: Deleted the table.
+2017-09-05T16:28:13.466609000 134873.374005s info: Table 9b6172f0-88ac-4504-8208-41eb5500dd4f: Starting a new Raft election for term 1.
+2017-09-05T16:28:13.466759000 134873.374154s info: Table 9b6172f0-88ac-4504-8208-41eb5500dd4f: Added replica on this server.
+2017-09-05T16:28:13.486960000 134873.394356s info: Table 9b6172f0-88ac-4504-8208-41eb5500dd4f: This server is Raft leader for term 1. Latest log index is 0.

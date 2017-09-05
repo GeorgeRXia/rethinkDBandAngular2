@@ -19,6 +19,10 @@ export class ViewListComponent implements OnInit {
   files: TreeNode[];
   treeTableFiles: TreeNode[];
   draggedList: List;
+  finishLoad: boolean = false;
+  spinner: boolean = true;
+  interval: any;
+  progress: number = 90;
 
 
   constructor(private listServ: ListService, private nodeService: NodeService) { }
@@ -35,8 +39,18 @@ export class ViewListComponent implements OnInit {
         {label: 'Charts', icon: '', url: 'http://localhost:4200/#/chart'}
     ]
     }];
-  }
+    this.interval = setInterval(()=>{
+          this.progress += 1;
+          console.log(this.progress)
+          if (this.progress == 100){
 
+            this.spinner = false;
+            this.finishLoad = true;
+            clearInterval(this.interval)
+            }
+        },500);
+  }
+  
   showDialog() {
         this.display = true;
     }

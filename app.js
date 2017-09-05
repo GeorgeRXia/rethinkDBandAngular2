@@ -5,6 +5,7 @@ var app = express();
 var http = require('http').Server(app);
 var db = require('./models/db');
 
+
 var dbModel = new db();
 console.log(db)
 console.log(dbModel.setupDb);
