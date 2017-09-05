@@ -14,7 +14,6 @@ import {Message} from 'primeng/components/common/api';
 export class PrimengAddListComponent implements OnInit {
   @Output() addList: EventEmitter<List> = new EventEmitter<List>();
   private newList :List;
-  progress: number = 70;
   msgs: Message[] = [];
   meals = [
     {value: '0', label: '0'},
@@ -44,9 +43,7 @@ export class PrimengAddListComponent implements OnInit {
         _id:''
 
     };
-    setInterval(()=>{this.progress +=1
-
-    },500);
+    
   }
   showViaService() {
       this.msgs.push({severity:'success', summary:'Success Message', detail:'New entry Added'});

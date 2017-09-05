@@ -2,7 +2,9 @@
   <md-spinner></md-spinner>
 </div>
 <div *ngIf="finishLoad">
+  <div class="profile-data">
   <p-menu [model]="items"></p-menu>
+  </div>
   <h2> Profile </h2>
   <p-dialog header="Did you know?" [(visible)]="display">
     You can edit view your profile in many formats and add additional information

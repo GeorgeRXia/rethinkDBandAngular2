@@ -22,7 +22,7 @@ export class ViewListComponent implements OnInit {
   finishLoad: boolean = false;
   spinner: boolean = true;
   interval: any;
-  progress: number = 90;
+  progress: number = 99;
 
 
   constructor(private listServ: ListService, private nodeService: NodeService) { }
@@ -50,7 +50,7 @@ export class ViewListComponent implements OnInit {
             }
         },500);
   }
-  
+
   showDialog() {
         this.display = true;
     }

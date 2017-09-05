@@ -1,9 +1,11 @@
 <h2>Add to Profile</h2>
-<form (ngSubmit)="onSubmit()">
-<label for="date" > What's Today's Date?  </label>
-<div>
-  <p-calendar [(ngModel)]="newList.date" [inline]="true" name="date"></p-calendar>
-</div>
+<form (ngSubmit)="onSubmit()" class="flex">
+  <div>
+    <label for="date" > What's Today's Date?  </label>
+    <div>
+      <p-calendar [(ngModel)]="newList.date" [inline]="true" name="date"></p-calendar>
+    </div>
+  </div>
 <div>
   <label for="fatigue" > Did you feel fatigue?  </label>
   <p-checkbox name="fatigue" value="true" [(ngModel)]="newList.fatigue"></p-checkbox>
@@ -24,11 +26,13 @@
   <label for="category" > How busy were you?  </label>
   <p-listbox [options]="category" [(ngModel)]="newList.category" name="category"></p-listbox>
 </div>
-<label for="blog"> In one word, how was your day? </label>
 <div class="ui-g ui-fluid">
     <div class="ui-g-12 ui-md-4">
         <div class="ui-inputgroup">
+          <div>
+            <label for="blog"> In one word, how was your day? </label>
             <input type="text" pInputText placeholder="one word" [(ngModel)]="newList.description" name="description">
+          </div>
         </div>
     </div>
 </div>
