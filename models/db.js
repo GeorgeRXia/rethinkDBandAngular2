@@ -18,6 +18,7 @@ class db {
       },
       function(connection,callback) {
         rethinkdb.dbCreate('goals').run(connection,function(err, result) {
+          connection.close();
           if(err) {
             console.log("Database already created");
           } else {
@@ -27,6 +28,7 @@ class db {
         });
       },
       function(connection,callback) {
+
         rethinkdb.db('goals').tableCreate('goal').run(connection,function(err,result) {
           connection.close();
           if(err) {
@@ -71,15 +73,6 @@ class db {
       callback(err,connection);
     });
   };
-  // connectToImageDb(callback) {
-  //   rethinkdb.connect({
-  //     host : 'localhost',
-  //     port : 28015,
-  //     db : 'images'
-  //   }, function(err,connection) {
-  //     callback(err,connection);
-  //   });
-  // };
 }
 
 module.exports = db;

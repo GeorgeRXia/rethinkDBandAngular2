@@ -1,0 +1,74 @@
+
+/*typography*/
+a {
+  text-decoration: none;
+}
+h1 {
+   font-family: helvetica;
+}
+.start-button{
+   font-size: 30px;
+
+}
+
+/*style*/
+.start-button{
+  background-color: white;
+  color: black;
+
+}
+/*structure*/
+#hero {
+  background-image: url(../../images/mountain.jpg);
+  background-size: cover;
+  height: 1000px;
+  width:100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.container-body{
+  width: 700px;
+  margin: 0 auto;
+  text-align: center;
+
+}
+.background-container-body{
+background-color: white;
+width: 100%;
+
+}
+.mountain-image-text {
+  text-align: center;
+  margin: 0 0 100px 0;
+  padding-top: 150px;
+
+}
+.right-paragraph{
+  float: left;
+  width: 290px;
+  height:249.92px;
+}
+.left-paragraph{
+  float: right;
+  width: 290px;
+  height:249.92px;
+}
+.paragraph-header{
+  box-sizing: border-box;
+  height: 35px;
+
+}
+.container-paragraph{
+  overflow: auto;
+  margin-bottom: 50px;
+}
+
+.start-button {
+  width: 500px;
+  border-radius: 50px;
+  height: 100px;
+}

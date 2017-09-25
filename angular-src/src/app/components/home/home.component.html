@@ -1,0 +1,48 @@
+<div *ngIf="frontPageProgressBar">
+  <md-progress-bar mode="indeterminate"></md-progress-bar>
+  <div class="fillerbox"></div>
+</div>
+
+<div *ngIf="frontPageLoad">
+  <div id="hero">
+
+    <div class="container-body">
+      <h1 class="mountain-image-text">Start YOUR way to a less stressful more productive lifestyle</h1>
+    </div>
+
+    <div class="background-container-body">
+      <div class="container-paragraph">
+        <div class="container-body">
+          <md-card class="right-paragraph">
+            <h2 class="paragraph-header"> Welcome to Goal Reacher! </h2>
+            <hr>
+            <p> We are here to join you in your journey to accomplish whatever goal </p>
+            <p> By logging your data, we can help you analyze and pin point which habits make you more productive.</p>
+            <p>So we can put together a to-do-list that isn't overwhelming, but also maximizes your day.</p>
+          </md-card>
+
+          <md-card class="left-paragraph">
+            <h2 class="paragraph-header">Look at our Methodology</h2>
+            <hr>
+            <md-tab-group>
+              <md-tab label="Charts">
+                <p>Chart Your progress to easily discern patterns for success</p>
+              </md-tab>
+              <md-tab label="Blogs">
+                <p>You can then look at certain days mindsets to emulate the habits</p>
+              </md-tab>
+              <md-tab label="Daily Reports">
+                <p>Log your data everyday for quicker conclusions</p>
+              </md-tab>
+            </md-tab-group>
+          </md-card>
+        </div>
+      </div>
+    </div>
+    <div class="container-body">
+      <button md-raised-button class="start-button">
+    <a uiSref="addlist" uiSrefActive="active">Get Started</a>
+  </button>
+    </div>
+  </div>
+</div>

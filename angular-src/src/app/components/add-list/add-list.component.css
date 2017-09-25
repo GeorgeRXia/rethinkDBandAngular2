@@ -1,0 +1,33 @@
+/*typography*/
+
+
+/*structure*/
+.header{
+ text-align: center;
+}
+
+.container-material-card {
+  border-radius: 25px;
+  width: 600px;
+  margin: 0 auto;
+  height: 50px;
+}
+.container-material-card-blog {
+  height: 100px;
+  border-radius: 25px;
+  width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+.label-answer {
+  float: right;
+
+}
+
+.submit-btn-container {
+  text-align: center;
+}
+.submit-btn {
+  font-size: 20px;
+
+}

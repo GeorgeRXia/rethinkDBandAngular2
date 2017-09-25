@@ -2,10 +2,10 @@ import { NgModule} from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
 
 
-import {AddListComponent } from '../add-list/add-list.component';
-import {ViewListComponent} from '../view-list/view-list.component';
-import {ChartComponent} from '../chart/chart.component';
-import {HomeComponent} from '../home/home.component';
+import {AddListComponent } from '../components/add-list/add-list.component';
+import {ViewListComponent} from '../components/view-list/view-list.component';
+import {ChartComponent} from '../components/chart/chart.component';
+import {HomeComponent} from '../components/home/home.component';
 import {AppComponent} from '../app.component';
 
 

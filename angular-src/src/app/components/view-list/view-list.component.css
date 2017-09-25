@@ -1,0 +1,50 @@
+/*loading page*/
+.filler{
+  position: relative;
+  height: 800px;
+  width:1000px;
+
+}
+
+md-spinner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%)
+}
+
+
+/*view-list css*/
+
+/*style*/
+.ui-g{
+border: 1px solid black;
+
+
+}
+.chart-link {
+  text-decoration: none;
+
+}
+
+/*structure*/
+.chart-btn-container{
+  text-align: center;
+  clear: both;
+  margin: 20px;
+}
+.chart-btn{
+  width: 200px;
+
+}
+
+.profile-data {
+  position: relative;
+  width: 500px;
+  text-align: center;
+
+}
+.container-data{
+  width: 900px;
+  margin: 40px auto;
+}

@@ -1,0 +1,59 @@
+<h2>Add to Profile</h2>
+
+<form (ngSubmit)="onSubmit()" class="flex">
+  <fieldset>
+    <legend>Add another day</legend>
+    <div class="question">
+      <label for="date"> What's Today's Date?  </label>
+      <div>
+        <p-calendar [(ngModel)]="newList.date" [inline]="true" name="date"></p-calendar>
+      </div>
+    </div>
+
+    <div class="question">
+      <label for="fatigue"> Did you feel fatigue?  </label>
+      <p-checkbox name="fatigue" value="true" [(ngModel)]="newList.fatigue"></p-checkbox>
+    </div>
+
+    <div class="question">
+      <label for="sleep"> Did you get 8 hours or more sleep?  </label>
+      <p-checkbox name="sleep" value="yes" [(ngModel)]="newList.sleep"></p-checkbox>
+    </div>
+
+    <div class="question">
+      <label for="exercise"> Did you exercise?  </label>
+      <p-checkbox name="exercise" value="true" [(ngModel)]="newList.exercise"></p-checkbox>
+    </div>
+
+    <div class="question">
+      <label for="meal"> How many meals did you have?  </label>
+      <p-listbox [options]="meals" [(ngModel)]="newList.meal" name="meal"></p-listbox>
+    </div>
+
+    <div class="question">
+      <label for="category"> How busy were you?  </label>
+      <p-listbox [options]="category" [(ngModel)]="newList.category" name="category"></p-listbox>
+    </div>
+
+    <div class="ui-g ui-fluid question">
+      <div class="ui-g-12 ui-md-4">
+        <div class="ui-inputgroup">
+          <div>
+            <label for="blog"> In one word, how was your day? </label>
+            <input type="text" pInputText placeholder="one word" [(ngModel)]="newList.description" name="description">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="question">
+      <label class="blog-question" for="blog"> Brief Notes About the Day </label>
+      <textarea class="blog-textarea" pInputTextarea [(ngModel)]="newList.blog" name="blog"></textarea>
+    </div>
+
+    <div>
+      <button pButton type="submit" (click)="showViaService()" label="submit" class="submit-btn"></button>
+    </div>
+    <p-messages [(value)]="msgs"></p-messages>
+  </fieldset>
+</form>

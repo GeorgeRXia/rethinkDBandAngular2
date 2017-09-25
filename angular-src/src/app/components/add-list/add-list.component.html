@@ -1,0 +1,94 @@
+<div *ngIf="addPageProgressBar">
+  <md-progress-bar mode="determinate" [value]="progress"></md-progress-bar>
+  <div class="fillerbox"></div>
+</div>
+
+<div *ngIf="addPageLoad">
+  <div class="header">
+    <h2> Tell Me About Your Day </h2>
+  </div>
+
+  <form (ngSubmit)="onSubmit()">
+    <fieldset>
+      <legend>Daily Report</legend>
+
+      <md-card class="container-material-card">
+        <label for="date" class="date"> What's Today's Date?  </label>
+        <span class="label-answer">
+        <md-input-container class="date">
+          <input mdInput [mdDatepicker]="picker" placeholder="Choose a date" [(ngModel)]="newList.date" name="date" >
+          <button mdSuffix [mdDatepickerToggle]="picker"></button>
+        </md-input-container>
+        <md-datepicker #picker></md-datepicker>
+      </span>
+      </md-card>
+      <br>
+
+      <md-card class="container-material-card">
+        <label for="sleep"> Did You Sleep 8 Or More Hours?</label>
+        <md-radio-group [(ngModel)]="newList.sleep" name="sleep">
+          <span class="label-answer">
+          <md-radio-button value="yes">Yes</md-radio-button>
+          <md-radio-button value="no">No</md-radio-button>
+        </span>
+        </md-radio-group>
+      </md-card>
+      <br>
+
+      <md-card class="container-material-card">
+        <label for="fatigue"> Did You Feel Fatigue?</label>
+        <span class="label-answer"><md-checkbox [(ngModel)]="newList.fatigue" name="fatigue"></md-checkbox></span>
+      </md-card>
+      <br>
+
+      <md-card class="container-material-card">
+        <label for="exercise"> Did You Exercise?</label>
+        <span class="label-answer"><md-slide-toggle [(ngModel)]="newList.exercise" name="exercise"></md-slide-toggle></span>
+      </md-card>
+      <br>
+
+      <md-card class="container-material-card">
+        <label for="category">How Busy Was Your Day? </label>
+        <span class="label-answer">
+        <select [(ngModel)]="newList.category" name="category">
+          <option value="Very">Very</option>
+          <option value="Medium">Medium</option>
+          <option value="Low">Low</option>
+        </select>
+      </span>
+      </md-card>
+      <br>
+
+      <md-card class="container-material-card">
+        <label for="meal">How Many Meals Did You Eat? </label>
+        <span class="label-answer">
+        <md-select placeholder="Select" [(ngModel)]="newList.meal" name="meal">
+          <md-option *ngFor="let meal of meals" [value]="meal.value">
+            {{ meal.viewValue }}
+          </md-option>
+        </md-select>
+      </span>
+      </md-card>
+      <br>
+
+      <md-card class="container-material-card">
+        <label for="description">In One Word How Do You Feel?</label>
+        <span class="label-answer">
+        <input type="text" [(ngModel)]="newList.description" name="description" required>
+      </span>
+      </md-card>
+      <br>
+
+      <md-card class="container-material-card-blog">
+        <label for="blog"> Brief Notes About the Day </label>
+        <br>
+        <textarea rows="4" cols="45" [(ngModel)]="newList.blog" name="blog" required></textarea>
+      </md-card>
+      <br>
+      
+      <div class="submit-btn-container">
+        <button type="submit" class="submit-btn" (click)="openSnackBar()">Submit</button>
+      </div>
+    </fieldset>
+  </form>
+</div>

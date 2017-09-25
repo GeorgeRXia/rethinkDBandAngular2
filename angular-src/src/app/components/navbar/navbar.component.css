@@ -1,0 +1,25 @@
+/*typography*/
+ md-chip-list{
+   font-family: helvetica;
+
+ }
+/*style*/
+.chips{
+  border: 1px red solid;
+
+}
+
+
+/*structure*/
+.rightside-tool-bar {
+  flex: 1 1 auto;
+}
+.tagline {
+  margin-left: 20px;
+
+}
+.chips{
+  display:block !important;
+  border: 1px red solid;
+
+}

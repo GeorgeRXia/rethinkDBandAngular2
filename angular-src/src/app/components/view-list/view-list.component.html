@@ -1,0 +1,80 @@
+<div *ngIf="spinner">
+  <md-spinner></md-spinner>
+  <div class="filler"></div>
+</div>
+
+<div *ngIf="finishLoad">
+  <p-dialog header="Did you know?" [(visible)]="display">
+    You can edit view your profile in many formats and add additional information
+  </p-dialog>
+  <div class="profile-data">
+  <p-menu [model]="items"></p-menu>
+  </div>
+<div class="container-data">
+  <h2> Profile </h2>
+  <div class="ui-g">
+    <div class="ui-g-2">Description</div>
+    <div class="ui-g-2">Date</div>
+    <div class="ui-g-2">Sleep</div>
+    <div class="ui-g-2">Fatigue</div>
+    <div class="ui-g-2">exercise</div>
+    <div class="ui-g-1">Meal</div>
+    <div class="ui-g-1">Busy Level</div>
+    <!-- <div class="ui-g-1"> Delete</div> -->
+  </div>
+  <div class="ui-g" *ngFor="let list of lists">
+    <div class="ui-g-2">{{list.description}}</div>
+    <div class="ui-g-2">{{list.date | date}}</div>
+    <div class="ui-g-2">{{list.sleep}}</div>
+    <div class="ui-g-2">{{list.fatigue}}</div>
+    <div class="ui-g-2">{{list.exercise}}</div>
+    <div class="ui-g-1">{{list.meal}}</div>
+    <div class="ui-g-1">{{list.category}}</div>
+    <!-- <div> <button type="button" (click)="deleteList(list); $event.stopPropagation();">Delete</button></div> -->
+  </div>
+</div>
+
+<div class="container-data">
+  <p-pickList [source]="lists" [target]="list2">
+    <ng-template let-list pTemplate="item">
+      <div class="ui-helper-clearfix">
+        <!-- <img src="assets/showcase/images/demo/car/{{car.brand}}.png" style="display:inline-block;margin:2px 0 2px 2px"   width="48"> -->
+        <div style="font-size:14px;float:right;margin:15px 5px 0 0">{{list.date}} - {{list.description}} </div>
+      </div>
+    </ng-template>
+  </p-pickList>
+</div>
+
+<div class="container-data">
+  <p-dataTable [value]="lists">
+    <p-column field="description" header="description"></p-column>
+    <p-column field="date" header="date"></p-column>
+    <p-column field="meal" header="meal"></p-column>
+    <p-column field="category" header="category"></p-column>
+  </p-dataTable>
+</div>
+
+  <div class="ui-grid ui-grid-pad ui-grid-responsive">
+    <div class="ui-grid-row">
+      <div class="ui-grid-col-6 ui-widget-content" style="border-right:0 none">
+        <ul style="margin:0;padding:0">
+          <li *ngFor="let list of lists" class="ui-state-default ui-helper-clearfix" pDraggable="lists" (onDragStart)="dragStart($event,list)" (onDragEnd)="dragEnd($event)">
+            <i class="fa fa-arrows fa-2x" style="float:right;margin-top:8px"></i>
+            <div style="margin:8px 0 0 8px;float:left">{{list.date}} - {{list.meal}}</div>
+          </li>
+        </ul>
+      </div>
+      <div class="ui-grid-col-6 ui-widget-content" pDroppable="lists" (onDrop)="drop($event)" [ngClass]="{'ui-state-highlight':draggedList}">
+        <p-dataTable [value]="list2">
+          <p-column field="date" header="Date"></p-column>
+          <p-column field="meal" header="Meal"></p-column>
+        </p-dataTable>
+      </div>
+    </div>
+  </div>
+  <app-primeng-add-list (addList)='onAddList($event)'></app-primeng-add-list>
+ <div class="chart-btn-container">
+  <button class="chart-btn" pButton type="button" label="  ">
+    <a uiSref="chart" uiSrefActive="active" class="chart-link"> Go To Chart</a>
+  </button>
+</div>
