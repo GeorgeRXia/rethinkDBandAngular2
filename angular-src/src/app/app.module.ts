@@ -28,6 +28,7 @@ import { PrimengAddListComponent } from './components/primeng-add-list/primeng-a
 import { MaterialDialogComponent } from './components/material-dialog/material-dialog.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FilenavComponent } from './components/filenav/filenav.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 
 let INITIAL_STATES = [addListState, viewListState, chartState, homeState];
@@ -43,7 +44,8 @@ let INITIAL_STATES = [addListState, viewListState, chartState, homeState];
     PrimengAddListComponent,
     MaterialDialogComponent,
     NavbarComponent,
-    FilenavComponent
+    FilenavComponent,
+    FooterComponent
 
   ],
   imports: [

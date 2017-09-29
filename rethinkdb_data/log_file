@@ -157,3 +157,9 @@
 2017-09-21T12:54:59.573798000 1.429908s info: Table f15c3841-225a-4540-9ced-0243c6be6777: Starting a new Raft election for term 3.
 2017-09-21T12:54:59.576984000 1.433094s info: Table 5a50d873-9a52-455f-b0a2-0db7aed7344a: This server is Raft leader for term 6. Latest log index is 15.
 2017-09-21T12:54:59.598391000 1.454501s info: Table f15c3841-225a-4540-9ced-0243c6be6777: This server is Raft leader for term 3. Latest log index is 6.
+2017-09-26T10:26:11.149828000 228612.342119s notice: Someone asked for the nonwhitelisted file "/home".  If this should be accessible, add it to the static web assets.
+2017-09-26T10:53:02.106075000 230223.283255s notice: Server got SIGINT from pid 24815, uid 501; shutting down...
+2017-09-26T10:53:02.106262000 230223.283443s notice: Shutting down client connections...
+2017-09-26T10:53:02.107708000 230223.284888s notice: All client connections closed.
+2017-09-26T10:53:02.107717000 230223.284897s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2017-09-26T10:53:02.125993000 230223.303173s notice: Storage engine shut down.

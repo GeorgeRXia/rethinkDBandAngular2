@@ -1,0 +1,12 @@
+/*
+style*/
+.container-footer{
+  background-color: black;
+  height: 60px;
+  color: white;
+
+}
+
+.copy-right p{
+  margin:0;
+}
